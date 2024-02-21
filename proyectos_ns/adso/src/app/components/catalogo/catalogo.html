@@ -1,0 +1,16 @@
+<ActionBar>
+    <link rel="stylesheet" href="catalogo.css">
+    <Label text="Catalogo"></Label>
+    <NavigationButton text="Go back" android.systemIcon="ic_menu_back" (tap)="onTap()" />
+</ActionBar>
+
+<DockLayout stretchLastChild="true" padding="10">
+    <Label text="" dock="left" width="40"></Label>
+    <Label text="" dock="top" height="40"></Label>
+    <Label text="" dock="right" width="40"></Label>
+    <Label text="" dock="bottom" height="40"></Label>
+    <StackLayout backgroundColor="#ffffff">
+        <SegmentedBar [items]="mySegmentedBarItems" selectedIndex="0" (selectedIndexChange)="onSelectedIndexChange($event)"></SegmentedBar>
+        <Button text="Salir" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true"></Button>
+    </StackLayout>
+</DockLayout>

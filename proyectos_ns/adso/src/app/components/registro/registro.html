@@ -1,0 +1,46 @@
+<ActionBar>
+    <Label text="Tienda Virtual"></Label>
+    <NavigationButton text="Go back" android.systemIcon="ic_menu_back" (tap)="onTap()" />
+</ActionBar>
+
+<DockLayout stretchLastChild="true" padding="10" backgroundImage="~/app/images/fondo.jpg">
+    <Label text="" dock="left" width="40"></Label>
+    <Label text="" dock="top" height="40"></Label>
+    <Label text="" dock="right" width="40"></Label>
+    <Label text="" dock="bottom" height="40"></Label>
+
+    <StackLayout backgroundColor="#d2d3cd">
+        <Image src="~/app/images/logodefinitivo1.png"></Image>
+        <Label class="texto_centrado" text="REGISTRARSE" style="color: rgb(0, 0, 0);" height="50" backgroundColor="#c2c2c2"
+            fontWeight="bold"></Label>
+
+        <FlexboxLayout class="page">
+            <StackLayout class="forms">
+                <TextField hint="NOMBRE DE USUARIO" style="background-color: rgb(0, 0, 0); text-align: center;"
+                    height="40" padding="10" />
+                <TextField hint="CORREO ELECTRONICO" style="background-color: rgb(0, 0, 0); text-align: center;"
+                    height="40" padding="10" />
+                <TextField hint="CONTRASEÑA" secure="true" style="background-color: rgb(0, 0, 0); text-align: center;"
+                    height="40" padding="10" />
+
+                <label text="MINIMO DE 8 CARACTERES"></label>
+
+                <TextField hint="CONFIRMAR CONTRASEÑA" secure="true"
+                    style="background-color: rgb(0, 0, 0); text-align: center;" height="40" padding="10" />
+
+                <label text="¿DESEAS NOTIFICACIONES DE PRODUCTOS?"></label>
+                <label text="¿YA TIENES CUENTA? INICIAR SESION"></label>
+
+
+
+
+                <Button text="CREAR CUENTA" [nsRouterLink]="['/home']"
+                    style="color: rgb(247, 247, 247); background-color: rgb(255, 0, 0);" fontWeight="bold"></Button> />
+                <Button text="REGRESAR" [nsRouterLink]="['/home']"
+                    style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);" fontWeight="bold"></Button> />
+            </StackLayout>
+        </FlexboxLayout>
+
+    </StackLayout>
+
+</DockLayout>

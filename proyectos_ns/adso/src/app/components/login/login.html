@@ -1,0 +1,35 @@
+<ActionBar>
+    <Label text="Iniciar Sesión"></Label>
+</ActionBar>
+
+<DockLayout stretchLastChild="true" padding="10" backgroundImage="~/app/images/fondo.jpg">
+    <Label text="" dock="left" width="40"></Label>
+    <Label text="" dock="top" height="40"></Label>
+    <Label text="" dock="right" width="40"></Label>
+    <Label text="" dock="bottom" height="40"></Label>
+    <StackLayout backgroundColor="#d2d3cd">
+        <Image src="~/app/images/logodefinitivo1.png"></Image>        
+        <Label class="texto_centrado" style="color: rgb(0, 0, 0);" text="Login" height="70"></Label>
+        <StackLayout class="form">
+            <StackLayout class="input-field">
+                <TextField style="color: rgb(0, 0, 0);" hint="Correo" class="input"></TextField>                
+            </StackLayout>
+
+            <StackLayout class="input-field">
+                <TextField style="color: rgb(0, 0, 0);" hint="Contraseña" class="input"></TextField>
+            </StackLayout>
+
+            <Button text="Iniciar Sesión" [nsRouterLink]="['/home']" pageTransition="slide"
+                clearHistory="true"></Button>
+        </StackLayout>
+        <FlexboxLayout class="page">
+            <StackLayout class="form">
+                ...
+            </StackLayout>
+
+            <label text="¿No tienes cuenta?" style="color: rgb(0, 0, 0);" [nsRouterLink]="['/registro']"></label>
+            <Button text="Regresar..." [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true"></Button>
+        </FlexboxLayout>
+
+    </StackLayout>
+</DockLayout>

@@ -1,0 +1,11 @@
+<ActionBar>
+    <Label text="Productos"></Label>
+    <NavigationButton text="Go back" android.systemIcon="ic_menu_back" (tap)="onTap()" />
+</ActionBar>
+
+
+<StackLayout backgroundColor="#DAF7A6">
+    <Label text='Productos:'></Label>
+    <Image src="~/app/images/af1.jpeg"></Image>
+    <Button text="Regresar..." [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true"></Button>
+</StackLayout>

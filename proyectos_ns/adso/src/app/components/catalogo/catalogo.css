@@ -1,0 +1,16 @@
+@import 'nativescript-filter-select/styles.css';
+
+Image {
+    height: 20%;
+    align-items: flex-end;
+}
+
+#lista {
+    width: 50%;
+}
+.CatalogoComponent{
+    font-size: 5;
+}
+.onTop{
+    color: #000;
+}

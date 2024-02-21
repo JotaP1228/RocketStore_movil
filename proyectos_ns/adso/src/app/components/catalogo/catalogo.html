@@ -10,7 +10,7 @@
     <Label text="" dock="right" width="40"></Label>
     <Label text="" dock="bottom" height="40"></Label>
     <StackLayout backgroundColor="#ffffff">
-        <SegmentedBar [items]="mySegmentedBarItems" selectedIndex="0" (selectedIndexChange)="onSelectedIndexChange($event)"></SegmentedBar>
+        <SegmentedBar id="tap" [items]="mySegmentedBarItems" selectedIndex="0" (selectedIndexChange)="onSelectedIndexChange($event)"></SegmentedBar>
         <Button text="Salir" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true"></Button>
     </StackLayout>
 </DockLayout>

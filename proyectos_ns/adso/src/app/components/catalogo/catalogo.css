@@ -8,9 +8,7 @@ Image {
 #lista {
     width: 50%;
 }
-.CatalogoComponent{
-    font-size: 5;
-}
-.onTop{
-    color: #000;
+
+#tap{
+    font-size: 11%;
 }

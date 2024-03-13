@@ -4,6 +4,8 @@ import { Router } from "@angular/router";
 @Component({
   selector: 'tienda',
   templateUrl: './tienda.html',
+  styleUrls: ['./tienda.css'],
+
 })
 export class TiendaComponent {
   public constructor(private router: Router) {

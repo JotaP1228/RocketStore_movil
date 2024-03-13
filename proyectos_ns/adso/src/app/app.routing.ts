@@ -2,10 +2,12 @@ import { LoginComponent } from "./components/login/login";
 import { RegistroComponent } from "./components/registro/registro";
 import { HomeComponent } from "./components/home/home";
 import { TiendaComponent } from "./components/tienda/tienda";
-import { ProductosComponent } from "./components/productos/productos";
 import { PerfilComponent } from "./components/perfil/perfil";
 import { CarritoComponent } from "./components/carrito/carrito";
 import { CatalogoComponent } from "./components/catalogo/catalogo";
+import { ProductosComponent } from "./components/productos/productos";
+
+
 
 export const appRoutes: any = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -14,9 +16,10 @@ export const appRoutes: any = [
   { path: "home", component: HomeComponent },
   { path: "tienda", component: TiendaComponent },
   { path: "catalogo", component: CatalogoComponent },
-  { path: "productos", component: ProductosComponent },
   { path: "perfil", component: PerfilComponent },
   { path: "carrito", component: CarritoComponent },
+  { path: "productos", component: ProductosComponent },
+
 
 ];
 
@@ -25,8 +28,8 @@ export const appComponents: any = [
   RegistroComponent,
   HomeComponent,
   TiendaComponent,
-  ProductosComponent,
   PerfilComponent,
   CarritoComponent,
   CatalogoComponent,
+  ProductosComponent, 
 ];

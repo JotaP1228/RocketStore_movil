@@ -23,8 +23,7 @@ export class ApiService {
     return this.http.post<any>(`${this.apiUrl}/categoria`, post);
   }
 
-  updateRegister(id: number, post: any): Observable<any> {
-    console.log(`datos: ${post.nombre_cat} - ${post.desc}`)
+  updateRegister(id: number, post: any): Observable<any> {    
     return this.http.put<any>(`${this.apiUrl}/categoria/${id}/`, post);
   }
 
